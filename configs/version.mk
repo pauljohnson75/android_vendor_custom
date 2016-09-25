@@ -12,13 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#PureNexus versioning
+#PaulNexus versioning
 ifndef ROM_BUILD_TYPE
-    ROM_BUILD_TYPE := HOMEMADE
+    ROM_BUILD_TYPE := PAULS
 endif
 
 ROM_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(ROM_BUILD_TYPE)
-ROM_NAME := pure_nexus
+ROM_NAME := paul_nexus
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rom.version=$(ROM_VERSION)
