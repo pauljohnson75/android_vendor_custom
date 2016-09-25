@@ -18,6 +18,11 @@ include vendor/custom/configs/custom_main.mk
 include vendor/custom/configs/system_additions.mk
 include vendor/custom/configs/version.mk
 
+#Google Dialer & Contacts
+ifeq ($(DISABLE_GOOGLE),)
+$(call inherit-product-if-exists, vendor/google/googlevendor.mk)
+endif
+
 # Telephony packages
 PRODUCT_PACKAGES += \
     Stk \
